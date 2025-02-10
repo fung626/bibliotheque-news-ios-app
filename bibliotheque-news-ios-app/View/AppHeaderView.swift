@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppHeaderView: View {
     
-    @Binding var openSideMenu: Bool
+    @Binding var isSideMenuActive: Bool
     
     let array1 = [
         "Game",
@@ -41,12 +41,11 @@ struct AppHeaderView: View {
         VStack {
             HStack {
                 Button {
-                    openSideMenu = !openSideMenu
+                    withAnimation {
+                        isSideMenuActive.toggle()
+                    }
                 } label: {
-                    Image("burger-menu")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 22, height: 32)
+                    BurgerMenuBtn(isOpen: $isSideMenuActive)
                 }.frame(width: 32, height: 32)
                     .padding(.leading, 8)
                 Image("logo-nba")
@@ -104,5 +103,5 @@ struct AppHeaderView: View {
 }
 
 #Preview {
-    AppHeaderView(openSideMenu: .constant(false))
+    AppHeaderView(isSideMenuActive: .constant(false))
 }

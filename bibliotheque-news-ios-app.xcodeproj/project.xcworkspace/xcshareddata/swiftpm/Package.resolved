@@ -1,5 +1,5 @@
 {
-  "originHash" : "d7785106dac71cc6a566b674e3613af6a32f7c5c48cb29e3acac8964fcd0e6f6",
+  "originHash" : "99f94c6b05e0b05a497a1d00c2e2dbb825bece44db4c083a0a8d8dbf81b5eec7",
   "pins" : [
     {
       "identity" : "markdownui",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "2849f5323265386e200484b0d0f896e73c3411b9",
         "version" : "6.0.1"
+      }
+    },
+    {
+      "identity" : "sidemenu",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jonkykong/SideMenu",
+      "state" : {
+        "revision" : "8bd4fd128923cf5494fa726839af8afe12908ad9",
+        "version" : "6.5.0"
       }
     },
     {

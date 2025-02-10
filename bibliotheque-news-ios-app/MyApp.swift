@@ -10,13 +10,11 @@ import SwiftUI
 @main
 struct MyApp: App {
     
-    @State private var openSideMenu = false
+    @State private var isSideMenuActive = false
     
     var body: some Scene {
         WindowGroup {
-            MyNavigationView(openSideMenu: $openSideMenu) {
-                ContentView(openSideMenu: $openSideMenu)
-            }
+            ContentView(isSideMenuActive: $isSideMenuActive)
         }
     }
 }

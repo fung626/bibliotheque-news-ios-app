@@ -9,18 +9,18 @@ import SwiftUI
 
 struct MyNavigationView<Content: View>: View {
     
-    @Binding var openSideMenu: Bool
+    @Binding var isSideMenuActive: Bool
     
     let content: Content
 
-    init(openSideMenu: Binding<Bool>, @ViewBuilder content: () -> Content) {
-        self._openSideMenu = openSideMenu
+    init(isSideMenuActive: Binding<Bool>, @ViewBuilder content: () -> Content) {
+        self._isSideMenuActive = isSideMenuActive
         self.content = content()
     }
 
     var body: some View {
         VStack(spacing: 0) {
-            AppHeaderView(openSideMenu: $openSideMenu)
+            AppHeaderView(isSideMenuActive: $isSideMenuActive)
             content
                 .navigationBarHidden(true)
         }
@@ -30,7 +30,7 @@ struct MyNavigationView<Content: View>: View {
 
 struct MyNavigationView_Previews: PreviewProvider {
     static var previews: some View {
-        MyNavigationView(openSideMenu: .constant(false)) {
+        MyNavigationView(isSideMenuActive: .constant(false)) {
             
         }
     }

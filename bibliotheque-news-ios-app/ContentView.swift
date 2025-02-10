@@ -7,40 +7,38 @@
 
 import SwiftUI
 import SSSwiftUISideMenu
+import SideMenu
 
 struct ContentView: View {
     
-    @Binding var openSideMenu: Bool
-    @State private var selectedIndex: Int = 0
-    @State private var menuConfig = SSMenuConfig()
-        
-    private var menuItems = [
-        MenuItem(title: "Home", icon: "home"),
-        MenuItem(title: "My Friends", icon: "friends"),
-        MenuItem(title: "Settings", icon: "setting"),
-        MenuItem(title: "Logout", icon: "logout")
-    ]
+    @Binding var isSideMenuActive: Bool
     
-    init(openSideMenu: Binding<Bool>) {
-        self._openSideMenu = openSideMenu
+    init(isSideMenuActive: Binding<Bool>) {
+        self._isSideMenuActive = isSideMenuActive
     }
     
     var body: some View {
         ZStack {
-            SSSwiftUISideMenu(openSideMenu: $openSideMenu, selectedIndex: $selectedIndex, menuItems: menuItems, menuConfig: menuConfig)
-            VStack {
-                ScrollView(.vertical, showsIndicators: false) {
-                    ArticleView()
-                        .padding(.vertical, 24)
-                    AppFooterView()
+            MyNavigationView(isSideMenuActive: $isSideMenuActive) {
+                VStack {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        ArticleView()
+                            .padding(.vertical, 24)
+                        AppFooterView()
+                    }
                 }
-            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color(red: 229 / 255, green: 231 / 255, blue: 235 / 255))
                 .edgesIgnoringSafeArea(.all)
+            }
+            
+            MySideMenuView(isSideMenuActive: $isSideMenuActive) {
+                MyMenuView()
+            }.edgesIgnoringSafeArea(.all)
         }
     }
 }
 
 #Preview {
-    ContentView(openSideMenu: .constant(false))
+    ContentView(isSideMenuActive: .constant(false))
 }

@@ -23,9 +23,12 @@
 		E292040F2D59F787000FE44C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292040E2D59F785000FE44C /* Article.swift */; };
 		E29204112D59F7AF000FE44C /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29204102D59F7AA000FE44C /* DataLoader.swift */; };
 		E29204142D59FC3C000FE44C /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29204132D59FC3A000FE44C /* ArticleViewModel.swift */; };
-		E29204182D5A0139000FE44C /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29204172D5A0139000FE44C /* SideMenuView.swift */; };
+		E29204182D5A0139000FE44C /* MySideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29204172D5A0139000FE44C /* MySideMenuView.swift */; };
 		E292041B2D5A028A000FE44C /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = E292041A2D5A028A000FE44C /* MarkdownUI */; };
 		E292041D2D5A028A000FE44C /* SSSwiftUISideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = E292041C2D5A028A000FE44C /* SSSwiftUISideMenu */; };
+		FF00C1D42D5A5DA0009A42AB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = FF00C1D32D5A5DA0009A42AB /* SideMenu */; };
+		FF00C1D62D5A63AE009A42AB /* MyMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00C1D52D5A63AE009A42AB /* MyMenuView.swift */; };
+		FF00C1D92D5A672B009A42AB /* BurgerMenuBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00C1D82D5A672B009A42AB /* BurgerMenuBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +68,9 @@
 		E292040E2D59F785000FE44C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		E29204102D59F7AA000FE44C /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		E29204132D59FC3A000FE44C /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
-		E29204172D5A0139000FE44C /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		E29204172D5A0139000FE44C /* MySideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySideMenuView.swift; sourceTree = "<group>"; };
+		FF00C1D52D5A63AE009A42AB /* MyMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenuView.swift; sourceTree = "<group>"; };
+		FF00C1D82D5A672B009A42AB /* BurgerMenuBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerMenuBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E292041D2D5A028A000FE44C /* SSSwiftUISideMenu in Frameworks */,
+				FF00C1D42D5A5DA0009A42AB /* SideMenu in Frameworks */,
 				E292041B2D5A028A000FE44C /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +171,9 @@
 				E29203F52D59A2EC000FE44C /* MyNavigationView.swift */,
 				E29203FC2D59E214000FE44C /* WrappingHStack.swift */,
 				E292040B2D59F609000FE44C /* ArticleView.swift */,
-				E29204172D5A0139000FE44C /* SideMenuView.swift */,
+				E29204172D5A0139000FE44C /* MySideMenuView.swift */,
+				FF00C1D52D5A63AE009A42AB /* MyMenuView.swift */,
+				FF00C1D82D5A672B009A42AB /* BurgerMenuBtn.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 			packageProductDependencies = (
 				E292041A2D5A028A000FE44C /* MarkdownUI */,
 				E292041C2D5A028A000FE44C /* SSSwiftUISideMenu */,
+				FF00C1D32D5A5DA0009A42AB /* SideMenu */,
 			);
 			productName = "bibliotheque-news-ios-app";
 			productReference = E29203B32D598E38000FE44C /* bibliotheque-news-ios-app.app */;
@@ -292,6 +301,7 @@
 			packageReferences = (
 				E29204152D59FD84000FE44C /* XCRemoteSwiftPackageReference "MarkdownUI" */,
 				E29204162D5A009E000FE44C /* XCRemoteSwiftPackageReference "SSSwiftUISideMenu" */,
+				FF00C1D22D5A5D88009A42AB /* XCRemoteSwiftPackageReference "SideMenu" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E29203B42D598E38000FE44C /* Products */;
@@ -338,10 +348,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29203E82D598E45000FE44C /* MyApp.swift in Sources */,
+				FF00C1D62D5A63AE009A42AB /* MyMenuView.swift in Sources */,
+				FF00C1D92D5A672B009A42AB /* BurgerMenuBtn.swift in Sources */,
 				E29203F42D5990F8000FE44C /* AppHeaderView.swift in Sources */,
 				E29203FD2D59E214000FE44C /* WrappingHStack.swift in Sources */,
 				E29204142D59FC3C000FE44C /* ArticleViewModel.swift in Sources */,
-				E29204182D5A0139000FE44C /* SideMenuView.swift in Sources */,
+				E29204182D5A0139000FE44C /* MySideMenuView.swift in Sources */,
 				E29203F92D59A91D000FE44C /* AppFooterView.swift in Sources */,
 				E292040F2D59F787000FE44C /* Article.swift in Sources */,
 				E29203F62D59A2EC000FE44C /* MyNavigationView.swift in Sources */,
@@ -693,6 +705,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		FF00C1D22D5A5D88009A42AB /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -705,6 +725,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E29204162D5A009E000FE44C /* XCRemoteSwiftPackageReference "SSSwiftUISideMenu" */;
 			productName = SSSwiftUISideMenu;
+		};
+		FF00C1D32D5A5DA0009A42AB /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF00C1D22D5A5D88009A42AB /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
