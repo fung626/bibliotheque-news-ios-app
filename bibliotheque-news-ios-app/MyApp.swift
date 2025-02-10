@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MyApp: App {
+    
+    @State private var openSideMenu = false
+    
     var body: some Scene {
         WindowGroup {
-            MyNavigationView {
+            MyNavigationView(openSideMenu: $openSideMenu) {
                 ContentView()
             }
         }

@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct MyNavigationView<Content: View>: View {
+    
+    @Binding var openSideMenu: Bool
+    
     let content: Content
 
-    init(@ViewBuilder content: () -> Content) {
+    init(openSideMenu: Binding<Bool>, @ViewBuilder content: () -> Content) {
+        self._openSideMenu = openSideMenu
         self.content = content()
     }
 
@@ -26,7 +30,8 @@ struct MyNavigationView<Content: View>: View {
 
 struct MyNavigationView_Previews: PreviewProvider {
     static var previews: some View {
-        MyNavigationView {
+        MyNavigationView(openSideMenu: .constant(false)) {
+            
         }
     }
 }
