@@ -1,0 +1,42 @@
+{
+  "originHash" : "d7785106dac71cc6a566b674e3613af6a32f7c5c48cb29e3acac8964fcd0e6f6",
+  "pins" : [
+    {
+      "identity" : "markdownui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/MarkdownUI",
+      "state" : {
+        "revision" : "5f613358148239d0292c0cef674a3c2314737f9e",
+        "version" : "2.4.1"
+      }
+    },
+    {
+      "identity" : "networkimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/NetworkImage",
+      "state" : {
+        "revision" : "2849f5323265386e200484b0d0f896e73c3411b9",
+        "version" : "6.0.1"
+      }
+    },
+    {
+      "identity" : "ssswiftuisidemenu",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mobile-simformsolutions/SSSwiftUISideMenu.git",
+      "state" : {
+        "revision" : "ff2e0908f4604076a755b16f67d9f24d0c7eb933",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-cmark",
+      "state" : {
+        "revision" : "3ccff77b2dc5b96b77db3da0d68d28068593fa53",
+        "version" : "0.5.0"
+      }
+    }
+  ],
+  "version" : 3
+}
