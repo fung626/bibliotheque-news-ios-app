@@ -20,7 +20,7 @@ struct MyNavigationView<Content: View>: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            AppHeaderView()
+            AppHeaderView(openSideMenu: $openSideMenu)
             content
                 .navigationBarHidden(true)
         }

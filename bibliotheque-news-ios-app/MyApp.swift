@@ -15,7 +15,7 @@ struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             MyNavigationView(openSideMenu: $openSideMenu) {
-                ContentView()
+                ContentView(openSideMenu: $openSideMenu)
             }
         }
     }

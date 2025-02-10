@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AppHeaderView: View {
     
+    @Binding var openSideMenu: Bool
+    
     let array1 = [
         "Game",
         "Schedule",
@@ -39,7 +41,7 @@ struct AppHeaderView: View {
         VStack {
             HStack {
                 Button {
-                    
+                    openSideMenu = !openSideMenu
                 } label: {
                     Image("burger-menu")
                         .resizable()
@@ -102,5 +104,5 @@ struct AppHeaderView: View {
 }
 
 #Preview {
-    AppHeaderView()
+    AppHeaderView(openSideMenu: .constant(false))
 }

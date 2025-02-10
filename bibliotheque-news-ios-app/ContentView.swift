@@ -21,6 +21,10 @@ struct ContentView: View {
         MenuItem(title: "Logout", icon: "logout")
     ]
     
+    init(openSideMenu: Binding<Bool>) {
+        self._openSideMenu = openSideMenu
+    }
+    
     var body: some View {
         ZStack {
             SSSwiftUISideMenu(openSideMenu: $openSideMenu, selectedIndex: $selectedIndex, menuItems: menuItems, menuConfig: menuConfig)
