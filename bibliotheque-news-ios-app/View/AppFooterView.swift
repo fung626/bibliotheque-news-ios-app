@@ -122,7 +122,11 @@ struct FooterSectionHeader: View {
     
     var body: some View {
         VStack {
-            Button(action: action) {
+            Button(action: {
+                withAnimation {
+                    action()
+                }
+            }) {
                 HStack {
                     Text(title)
                         .font(.headline)

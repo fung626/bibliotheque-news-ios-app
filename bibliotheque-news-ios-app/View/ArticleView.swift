@@ -63,10 +63,15 @@ struct AuthorView: View {
     
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: avatar))
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 48, height: 48)
-                .clipShape(Circle())
+            AsyncImage(url: URL(string: avatar)) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 48, height: 48)
+                    .clipShape(Circle())
+            } placeholder: {
+                ProgressView()
+            }
             VStack(alignment: .leading) {
                 Text(name)
                     .foregroundColor(.black)
