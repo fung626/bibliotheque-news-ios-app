@@ -1,41 +1,66 @@
 {
-  "article": {
-    "title": "5 takeaways: Luka Dončić to L.A., Anthony Davis to Dallas in stunning trade",
-    "sub_title": "Two All-NBA players have been swapped for each other in the middle of the season in a blockbuster 3-team deal.",
-    "from": "NBA.com News Services",
-    "updated_on": "February 3, 2025 8:40 PM",
-    "author": {
-        "name": "Shaun Powell",
-        "avatar": "https://cdn.nba.com/manage/2020/10/Powell.jpg",
-        "link": "Archive"
-    },
-    "image": "https://cdn.nba.com/manage/2024/06/GettyImages-1813808857-scaled-e1738505807661-1568x881.jpg",
-    "content": [
-      "<span class='wp-caption-text'>Breaking down the details behind Saturday's stunning news that Luka Dončić is heading to the Lakers.</span>",
-      "<p><a href='#'>Luka Dončić</a> led Dallas to the NBA Finals last season. Anthony Davis won a championship with the Los Angeles Lakers.</p>",
-      "<p>They’re switching teams now — in an absolute blockbuster.</p>",
-      "<p><strong>The Mavericks announced Sunday that they have traded Kia NBA MVP candidate Dončić to the Lakers in exchange for 10-time All-Star Davis,</strong> reserve guard Max Christie and a 2029 first-round draft pick.</p>",
-      "<p>The three-team deal, in which Los Angeles acquires veteran forwards Maxi Kleber and Markieff Morris, also includes Utah getting Jalen Hood-Schifino and a 2025 second-rounder from both the Mavs and Lakers.</p>",
-      "<p><strong>Los Angeles Lakers get:</strong></p>",
-      "<ul><li><a href='#'>Luka Dončić</a></li><li><a href='#'>Maxi Kleber</a></li><li><a href='#'>Markieff Morris</a></li></ul>"
-    ],
-    "related": [
-      {
-        "title": "5 instant reactions to AD-Luka trade",
-        "details": "Two All-NBA players have been swapped for each other in the middle of the season in a"
-      },
-      {
-        "title": "Luka the Laker: NBA world reacts to trade",
-        "details": "Hoops fans were left wondering if a viral joke was taking place as news of Luka Dončić being"
-      },
-      {
-        "title": "15 stunning trades in NBA history",
-        "details": "While there have been some shocking deals in NBA history, the most recent blockbuster lands"
-      },
-      {
-        "title": "Dear Dallas: Luka thanks 'special' Mavs fans",
-        "details": "Mavericks star shares: 'I am leaving a city that will always feel like a home away from home.'"
-      }
-    ]
-  }
+    "article": {
+        "title": "5 takeaways: Luka Dončić to L.A., Anthony Davis to Dallas in stunning trade",
+        "sub_title": "Two All-NBA players have been swapped for each other in the middle of the season in a blockbuster 3-team deal.",
+        "from": "NBA.com News Services",
+        "updated_on": "February 3, 2025 8:40 PM",
+        "author": {
+            "name": "Shaun Powell",
+            "avatar": "https://cdn.nba.com/manage/2020/10/Powell.jpg",
+            "link": "Archive"
+        },
+        "image": "https://cdn.nba.com/manage/2024/06/GettyImages-1813808857-scaled-e1738505807661-1568x881.jpg",
+        "content": [
+            "<span class='wp-caption-text'>Luka Dončić is officially a Laker, while Anthony Davis is headed to the Mavericks in 1 of the most stunning trades in NBA history.</span>",
+            "<ul><li><a href='#'>Get NBA League Pass TODAY</a></li><li><a href='#'>Maxi Kleber</a></li><li><a href='#'>2024-25 Trade Tracker: Every official deal</a></li></ul>",
+            "<p>Disbelief turned to shock, shock turned back to disbelief. After a basketball world spent the late night Saturday and wee Sunday morning hours <a href=''>asking itself this question</a> — Is this a hoax? — reality checked in and said Luka Dončić is indeed a Laker and Anthony Davis is indeed a Maverick.</p>",
+            "<p>This massive and unexpected and, quite frankly, head-scratching <a href=''>trade between Los Angeles and Dallas</a> instantly remakes a pair of teams and sends a pair of <a href=''>Kia MVP contenders</a> to different addresses. This much is true. Whether it pushes the Mavericks and/or Lakers another step in the right direction, either now or for as long as those players are in those uniforms, is questionable.</p>",
+            "<p>The Mavericks surrendered Luka in his prime, which seems unfathomable. They weren’t thrilled with something — his conditioning, defense, perhaps too high maintenance?</p>",
+            "<p>The Lakers handed over Davis, who fit with LeBron James and was part of the solution, not the problem, in L.A. Did they tire of his injury history or simply choose the younger star when given the rare chance?</p>"
+        ],
+        "related": [
+            {
+                "id": 2,
+                "image": "https://cdn.nba.com/manage/2025/02/GettyImages-2198282434-scaled.jpg",
+                "title": "5 Takeaways: Luka's Laker debut lights up L.A.",
+                "details": "The opposition was easy, but the 1st night of of Luka Dončić in a Lakers uniform was enormous for him, his team and the league.",
+                "time": "3 hours ago"
+            },
+            {
+                "id": 3,
+                "image": "https://cdn.nba.com/manage/2025/02/GettyImages-1160268569-scaled-e1739248089734.jpg",
+                "title": "Horst: Trading Middleton toughest move of career",
+                "details": "Three-time All-Star Middleton ranks behind only two-time MVP Giannis Antetokounmpo in games (735) and minutes (23,039) as a Buck.",
+                "time": "5 hours ago"
+            },
+            {
+                "id": 4,
+                "image": "https://cdn.nba.com/manage/2025/02/luka-doncic-waves.jpg",
+                "title": "Nightly Pulse: NBA news & highlights from Feb. 10",
+                "details": "Stay in the know on tonight's NBA action with the latest news, scores and highlights from around the league.",
+                "time": "4 hours ago"
+            },
+            {
+                "id": 5,
+                "image": "https://cdn.nba.com/manage/2025/02/GettyImages-2196676901-scaled-e1739227958917.jpg",
+                "title": "Mavs' Irving to replace Davis on Team Shaq",
+                "details": "Anthony Davis is unable to participate in the NBA All-Star Game because of left abductor strain.",
+                "time": "11 hours ago"
+            },
+            {
+                "id": 6,
+                "image": "https://cdn.nba.com/manage/2025/02/5eae6658-ba65-4edf-ac99-1b173eec139b-scaled.jpg",
+                "title": "Pelicans’ playoff games played leaders",
+                "details": "See who ranks among the New Orleans Pelicans' all-time leaders in playoff games played.",
+                "time": "12 hours ago"
+            },
+            {
+                "id": 7,
+                "image": "https://cdn.nba.com/manage/2025/02/GettyImages-588152490-scaled-e1739220527891.jpg",
+                "title": "NBA players born on February 18",
+                "details": "With a player born on each day, our birthday series continues with the NBA players born on February 18.",
+                "time": "12 hours ago"
+            }
+        ]
+    }
 }

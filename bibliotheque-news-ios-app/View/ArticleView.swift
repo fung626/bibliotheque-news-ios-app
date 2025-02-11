@@ -10,8 +10,6 @@ import MarkdownUI
 
 struct ArticleView: View {
     
-    @State private var contentHeights: [UUID: CGFloat] = [:]
-    
     let data: MyDemoData? = loadData()
     
     var body: some View {
@@ -47,7 +45,9 @@ struct ArticleView: View {
                     let content = a.content.joined(separator: "<br>\n")
                     AttributedStringView(attributedString: NSAttributedString.html(withBody: content, css: ""))
                         .frame(maxWidth: UIScreen.main.bounds.width)
-                        .padding(.vertical, 4)
+                        .padding(.top, 16)
+                        .padding(.bottom, 8)
+                    RelatedArticlesView()
                 }
             }.padding()
                 .frame(maxWidth: UIScreen.main.bounds.width)

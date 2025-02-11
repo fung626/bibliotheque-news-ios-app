@@ -36,8 +36,11 @@ struct Author: Codable {
 }
 
 struct RelatedArticle: Codable {
+    let id: Int
+    let image: String
     let title: String
     let details: String
+    let time: String
 }
 
 struct MyDemoData: Codable {

@@ -29,16 +29,17 @@ extension NSAttributedString {
             a {
                 color: \(UIColor.systemBlue.hex);
             }
-            li:last-child {
-                margin-bottom: 1em;
+            li a {
+                text-decoration: none;
+                color: \(UIColor.black.hex);
             }
             .wp-caption-text {
                 font-family: Roboto, arial, sans-serif;
                 font-weight: 400;
                 line-height: 1.2;
-                font-size: 0.875rem;
+                font-size: 14px;
                 padding-right: 0.5rem;
-                margin: 0.5rem 0 2rem;
+                margin: 0.5rem 0.2rem;
                 color: #8e9196;
             }
             \(css)
