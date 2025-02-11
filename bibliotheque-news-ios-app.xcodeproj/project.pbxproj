@@ -34,6 +34,7 @@
 		FF00C1D42D5A5DA0009A42AB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = FF00C1D32D5A5DA0009A42AB /* SideMenu */; };
 		FF00C1D62D5A63AE009A42AB /* MyMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00C1D52D5A63AE009A42AB /* MyMenuView.swift */; };
 		FF00C1D92D5A672B009A42AB /* BurgerMenuBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00C1D82D5A672B009A42AB /* BurgerMenuBtn.swift */; };
+		FF00C1DB2D5B9FB1009A42AB /* LatestArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00C1DA2D5B9FB1009A42AB /* LatestArticlesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		E29204172D5A0139000FE44C /* MySideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySideMenuView.swift; sourceTree = "<group>"; };
 		FF00C1D52D5A63AE009A42AB /* MyMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenuView.swift; sourceTree = "<group>"; };
 		FF00C1D82D5A672B009A42AB /* BurgerMenuBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerMenuBtn.swift; sourceTree = "<group>"; };
+		FF00C1DA2D5B9FB1009A42AB /* LatestArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestArticlesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				E29203FC2D59E214000FE44C /* WrappingHStack.swift */,
 				E292040B2D59F609000FE44C /* ArticleView.swift */,
 				E28A541F2D5B5262001023F7 /* RelatedArticlesView.swift */,
+				FF00C1DA2D5B9FB1009A42AB /* LatestArticlesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				FF00C1D92D5A672B009A42AB /* BurgerMenuBtn.swift in Sources */,
 				E28A54152D5ADFBD001023F7 /* DataHelper.swift in Sources */,
 				E29203F42D5990F8000FE44C /* AppHeaderView.swift in Sources */,
+				FF00C1DB2D5B9FB1009A42AB /* LatestArticlesView.swift in Sources */,
 				E29203FD2D59E214000FE44C /* WrappingHStack.swift in Sources */,
 				E29204142D59FC3C000FE44C /* ArticleViewModel.swift in Sources */,
 				E29204182D5A0139000FE44C /* MySideMenuView.swift in Sources */,
