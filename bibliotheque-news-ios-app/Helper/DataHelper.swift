@@ -1,10 +1,9 @@
 //
-//  DataLoader.swift
+//  DataHelper.swift
 //  bibliotheque-news-ios-app
 //
-//  Created by EthanTsang on 10/2/2025.
+//  Created by EthanTsang on 11/2/2025.
 //
-
 import Foundation
 
 func loadData() -> MyDemoData? {

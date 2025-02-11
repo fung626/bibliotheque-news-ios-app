@@ -51,12 +51,16 @@ struct AppFooterView: View {
                     }) {
                         if expandeds.contains(x.title) {
                             ForEach(x.childs, id: \.self) { link in
-                                Text(link)
-                                    .foregroundColor(.white)
-                                    .padding(.leading, 8)
+                                HStack {
+                                    Text(link)
+                                        .font(.footnote)
+                                        .foregroundColor(.white)
+                                    Spacer()
+                                }.padding(.horizontal, 32)
                                     .padding(.vertical, 4)
                             }
                         }
+                        Divider().background(.white)
                     }
             }
             HStack {
@@ -95,7 +99,7 @@ struct AppFooterView: View {
                 }.padding(.top, 8)
             }.padding(.horizontal, 16)
                 .padding(.bottom, 16)
-        }.padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
+        }.padding(.bottom, UIHelper().getSafeAreaInsets().bottom)
             .background(.black)
     }
     
@@ -130,8 +134,6 @@ struct FooterSectionHeader: View {
                 }
                 .padding(.init(top: 16, leading: 32, bottom: 16, trailing: 32))
             }
-            Divider()
-                .background(.white)
         }
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct MySideMenuView<Content: View>: View {
     
     @Binding var isSideMenuActive: Bool
-    let menuWidth: CGFloat = UIScreen.main.bounds.width * 0.75
+    let menuWidth: CGFloat = UIScreen.main.bounds.width
     let content: Content
     
     init(isSideMenuActive: Binding<Bool>, @ViewBuilder content: () -> Content) {
@@ -21,21 +21,20 @@ struct MySideMenuView<Content: View>: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
-                Color.black.opacity(isSideMenuActive ? 0.4 : 0)
+                /*Color.black.opacity(isSideMenuActive ? 0.4 : 0)
                     .edgesIgnoringSafeArea(.all)
                     .onTapGesture {
                         withAnimation {
-                            isSideMenuActive.toggle()
+                            // isSideMenuActive.toggle()
                         }
-                    }
+                    }*/
                 VStack {
                     content
                 }
                 .frame(width: menuWidth)
-                .background(Color.white)
                 .offset(x: isSideMenuActive ? 0 : -menuWidth)
-                .animation(.easeInOut(duration: 0.2))
-            }
+                .animation(.easeInOut(duration: 0.2), value: isSideMenuActive)
+            }.padding(.top, 55 + UIHelper().getSafeAreaInsets().top)
         }
     }
 }

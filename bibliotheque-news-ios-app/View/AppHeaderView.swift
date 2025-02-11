@@ -15,13 +15,7 @@ struct AppHeaderView: View {
         "Game",
         "Schedule",
         "Watch",
-        "News",
-        "All-Star",
-        "Stats",
-        "Standings",
-        "Teams",
-        "Players",
-      ]
+    ]
     
     let array2: [(id: Int, title: String, expandable: Bool)] = [
         (1, "Home", false),
@@ -38,7 +32,7 @@ struct AppHeaderView: View {
     ];
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HStack {
                 Button {
                     withAnimation {
@@ -53,10 +47,12 @@ struct AppHeaderView: View {
                 Spacer()
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 16) {
-                        ForEach(array1, id: \.self) { item in
-                            Text(item)
-                                .foregroundColor(.white)
-                                .font(.system(size: 14, weight: .semibold))
+                        if !isSideMenuActive {
+                            ForEach(array1, id: \.self) { item in
+                                Text(item)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 14, weight: .semibold))
+                            }
                         }
                     }
                 }
@@ -64,10 +60,11 @@ struct AppHeaderView: View {
                     
                 } label: {
                     Text("Sign In")
+                        .font(.body)
                         .foregroundColor(.white)
                 }.padding(.trailing, 8)
             }.frame(maxWidth: .infinity, maxHeight: 55)
-                .background(Color.black)
+                .background(.black)
             HStack {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
@@ -78,6 +75,11 @@ struct AppHeaderView: View {
                                 .foregroundColor(.black)
                                 .font(.system(size: 14, weight: .bold))
                         }.padding(.leading, 8)
+                        Divider()
+                            .frame(width: 0.5)
+                            .background(.black)
+                            .padding(.top, 12)
+                            .padding(.bottom, 12)
                         ForEach(array2, id: \.id) { x in
                             Button {
                                 // Handle expandable action
@@ -98,7 +100,7 @@ struct AppHeaderView: View {
             }.frame(maxWidth: .infinity, maxHeight: 48)
                 .background(.white)
                 .shadow(color: .black.opacity(0.25), radius: 5, x: 0, y: 5)
-        }.padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+        }.padding(.top, UIHelper().getSafeAreaInsets().top)
     }
 }
 

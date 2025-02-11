@@ -8,31 +8,62 @@
 import SwiftUI
 
 struct MyMenuView: View {
+    
+    let menuWidth: CGFloat = UIScreen.main.bounds.width * 0.35
+    
+    let links: [(id: Int, title: String, childs: [String])] = [
+        (1, "All-Star", []),
+        (2, "League Pass", []),
+        (3, "Games", []),
+        (4, "Schedule", []),
+        (5, "Watch", []),
+        (6, "News", []),
+        (7, "Stats", []),
+        (8, "Standings", []),
+        (9, "Teams", []),
+        (10, "Players", []),
+        (11, "NBA Play", []),
+        (12, "NBA Bet", []),
+        (13, "Fanfasy", []),
+        (14, "Store", []),
+        (15, "Tickets", []),
+    ]
+    
     var body: some View {
-        VStack(alignment: .leading) {
-        }.padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(UIColor.systemGray6))
+        HStack {
+            VStack(alignment: .leading) {
+                ScrollView(.vertical) {
+                    ForEach(links, id: \.id) { x in
+                        MenuItemView(title: x.title)
+                    }
+                }
+            }.frame(maxWidth: menuWidth, maxHeight: .infinity)
+                .background(.black)
+            Spacer()
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.bottom, UIHelper().getSafeAreaInsets().bottom)
+            .background(.white)
     }
 }
 
 struct MenuItemView: View {
+    
     var title: String
-    var icon: String
     
     var body: some View {
-        HStack {
-            Image(systemName: icon)
-                .frame(width: 24, height: 24)
-            Text(title)
-                .font(.system(size: 18, weight: .medium, design: .default))
-            Spacer()
-        }
-        .padding(.vertical, 10)
-        .padding(.horizontal)
-        .background(Color.white)
-        .cornerRadius(8)
-        .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 2)
+        VStack {
+            HStack {
+                Text(title)
+                    .foregroundColor(.white)
+                    .font(.headline)
+                Spacer()
+            }.padding(.horizontal)
+            Divider()
+                .frame(maxWidth: .infinity, maxHeight: 0.5)
+                .background(.white)
+                .padding(.top, 6)
+        }.padding(.top, 12)
+           
     }
 }
 
