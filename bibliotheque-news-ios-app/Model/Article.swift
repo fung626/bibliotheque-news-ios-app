@@ -12,6 +12,8 @@ struct Article: Codable {
     let subTitle: String
     let from: String
     let updatedOn: String
+    let author: Author
+    let image: String
     let content: [String]
     let related: [RelatedArticle]
     
@@ -20,9 +22,17 @@ struct Article: Codable {
         case subTitle = "sub_title"
         case from
         case updatedOn = "updated_on"
+        case author
+        case image
         case content
         case related
     }
+}
+
+struct Author: Codable {
+    let name: String
+    let avatar: String
+    let link: String
 }
 
 struct RelatedArticle: Codable {
